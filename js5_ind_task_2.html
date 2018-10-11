@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>операторы ветвлений и условий в JS</title>
+</head>
+<body>
+     <script>
+
+
+//task2
+
+var color=(prompt("Цвет гриба? ","")).toLowerCase();
+
+var view=(prompt("Есть юбочка? ","")).toLowerCase();
+	
+	var res;
+       	switch(view){
+		case ("да"):res=(color=="красный")? "Мухомор": "Внимательнее";break;
+		case ("нет"):res=(color=="красный")? "Подосиновик": (color=="белый") ? "Белый гриб":"Внимательнее";break;
+		default:res="Incorrect mushroom";
+	}
+       	alert(res);
+     </script>
+</body>
+</html>
