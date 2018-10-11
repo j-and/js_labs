@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>операторы ветвлений и условий в JS</title>
+</head>
+<body>
+     <script>
+//task1
+       	var date=new Date((prompt("Enter date ","")));
+	month=date.getMonth();
+	var res;
+       	switch(month){
+		case (0):
+		case (1):
+		case (11): res="Winter";break;
+		case (2):
+		case (3):
+		case (4): res="Spring";break;
+		case (5):
+		case (6):
+		case (7): res="Summerr";break;
+		case (8):
+		case (9):
+		case (10): res="Autumn";break;
+		default:"Incorrect date";
+	}
+       	
+       	alert(res);
+
+//task2
+
+var color=(prompt("Цвет гриба? ","")).toLowerCase();
+
+var view=(prompt("Есть юбочка? ","")).toLowerCase();
+	
+	var res;
+       	switch(view){
+		case ("да"):res=(color=="красный")? "Мухомор": "Внимательнее";break;
+		case ("нет"):res=(color=="красный")? "Подосиновик": (color=="белый") ? "Белый гриб":"Внимательнее";break;
+		default:res="Incorrect mushroom";
+	}
+       	alert(res);
+     </script>
+</body>
+</html>
