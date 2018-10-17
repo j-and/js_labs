@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Грибы</title>
+</head>
+<body>
+<script>
+
+		while(color!="белый"&&color!="желтый"&&color!="красный"&&color!="коричневый"){
+			var color=(prompt("Цвет гриба? ","")).toLowerCase();
+		}
+
+		while(view!="да"&&view!="нет"){
+			var view=(prompt("Есть юбочка? ","")).toLowerCase();
+		}
+
+		var res;
+		switch(view){
+			case ("да"):res=(color=="белый")? "Это поганка": "С грибами надо быть внимательнее";break;
+			case ("нет"):res=(color=="красный")? "Это подосиновик": (color=="белый") ? "Это белый гриб":"С грибами надо быть внимательнее";break;
+			default:res="С грибами надо быть внимательнее";
+		}
+		alert(res);
+		
+	</script>
+</body>
+</html>
