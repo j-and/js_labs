@@ -5,11 +5,10 @@
 </head>
 <body>
        	<script>
-
        		var a=(prompt("Введи a ",""));
        		var b=(prompt("Введи b ", ""));
        		
-       		var res=(isNaN(a*b)) ?  "Введенные значения - не цифры" : (a==b ? "а и b равны":"а и b не равны") ;
+       		var res=(Number(a*b)) ?  "Введенные значения - не цифры" : (a==b ? "а и b равны":"а и b не равны") ;
        		
        		alert(res);
        		

@@ -1,19 +1,23 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>операторы ветвлений и условий в JS</title>
+       <title>операторы ветвлений и условий в JS</title>
 </head>
 <body>
-       	<script>
+       <script>
+              var a=(prompt("Введи a ",""));
+              var b=(prompt("Введи b ", ""));
+              if(Number(a*b)<0){
+                    var res="Невозможно извлечь корень из отрицательного числа";
+             }
+             else{
+              var res=(isNaN(a*b)) ?  "Введенные значения - не цифры" : (Math.sqrt(a*b)<4?"Мало":"Много") ;
+              
+       }
+       
+       alert(res);
+       
+</script>
 
-       		var a=(prompt("Введи a ",""));
-       		var b=(prompt("Введи b ", ""));
-       		
-       		var res=(isNaN(a*b)) ?  "Введенные значения - не цифры" : (Math.sqrt(a*b)<4?"Мало":"Много") ;
-       		
-       		alert(res);
-       		
-       	</script>
-
-       </body>
-       </html>
+</body>
+</html>
