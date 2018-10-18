@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta charset="utf-8" />
+       <title>Самостоятельная работа</title>
+
+             <script>
+
+        function open1(){
+          var openWindow=window.open("","newWindow",config="width=400,height=400");
+         
+            openWindow.document.write("<htmL><head><title>Новое окно</title></head>");
+            openWindow.document.write("<body bgcolor='yellow'>");
+            openWindow.document.write("<p id='abzac1'>");
+            openWindow.document.write("center");
+             openWindow.document.write("<font size=+3>Наше новое окно</font><p>");
+              openWindow.document.write("  <a href='http://www.exam.by' target='main'>Эта ссылка<br>откроется в основном окне</a></p>");
+               openWindow.document.write("</center></body></html>");
+          
+        }       
+</script>
+</head>
+<body>
+<form>
+  <button onClick="open1()">Запуск страницы в новом окне</button>
+</form>
+
+</body>
+</html>
