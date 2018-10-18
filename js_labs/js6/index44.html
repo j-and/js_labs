@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Index44</title>
+</head>
+<body>
+ <script>
+   function calcD(a,b,c){
+
+       while(!Number(a)){
+           var a = prompt('Введите  а: ');
+       }
+       while(!Number(b)){
+           var b = prompt('Введите  b: ');
+       }
+
+       while(!Number(c)){
+           var c = prompt('Введите  c: ');
+       }
+       var result = Math.pow(b,2) - 4*a*c;
+       return result<0 ? 'Дискриминант отрицательный,недопустимое значение': 'Дискриминант='+result;
+   }
+   
+   alert(calcD());
+</script>
+</body>
+</html>
