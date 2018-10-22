@@ -2,29 +2,40 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-       <title>Свойства объекта Document</title>    
+ <title>Свойства объекта Document</title>    
+ <style>body, html { 
+   width: 100%;
+   height: 100%;
+ }</style>
 </head>
 
 <body> 
   <script language="javascript">
-  	var bgc=document.bgColor.valueOf();
-  	var fgc=document.fgColor;
-  	var lc=document.linkColor;
-  	var al=document.alinkColor;
-  	var vlc=document.vlinkColor;
-  	var url=document.location;
-  	var ref=document.referrer;
-  	var t=document.title;
-  	var lm=document.lastModified;
-  	document.write("Цвет фона этой страницы <b>"+bgc+"</b>.");
-  		document.write("<br>Цвет текста этой страницы <b>"+fgc+"</b>.");
-  			document.write("<br>Цвет ссылок этой страницы <b>"+lc+"</b>.");
-  			document.write("<br>Цвет активных ссылок этой страницы <b>"+al+"</b>.");
-  				document.write("<br>Цвет посещенных ссылок этой страницы <b>"+vlc+"</b>.");
-  					document.write("<br>URL этой страницы <b>"+url+"</b>.");
-  						document.write("<br>До этого вы были на странице <b>"+ref+"</b>.");
-  							document.write("<br>Заголовок этой страницы <b>"+t+"</b>.");
-  								document.write("<br>Последние изменения в документ внесены <b>"+lm+"</b>.");
-  </script>
-</body>
-</html>
+   
+    
+    function getValues(){
+
+                  var bgc=window.getComputedStyle(document.body)["background-color"];//document.bgColor;
+                  var fgc=window.getComputedStyle(document.body)["color"];
+                  var msg='This property is deprecated'
+                  var lc=document.body.aLink+msg;
+                  var al=document.body.aLink+msg;
+                  var vlc=document.body.vLink+msg;
+                  var url=document.location;
+                  var ref=document.referrer;
+                  var t=document.title;
+                  var lm=document.lastModified;
+                  document.write("Цвет фона этой страницы <b>"+bgc+"</b>.");
+                  document.write("<br>Цвет текста этой страницы <b>"+fgc+"</b>.");
+                  document.write("<br>Цвет ссылок этой страницы <b>"+lc+"</b>.");
+                  document.write("<br>Цвет активных ссылок этой страницы <b>"+al+"</b>.");
+                  document.write("<br>Цвет посещенных ссылок этой страницы <b>"+vlc+"</b>.");
+                  document.write("<br>URL этой страницы <b>"+url+"</b>.");
+                  document.write("<br>До этого вы были на странице <b>"+ref+"</b>.");
+                  document.write("<br>Заголовок этой страницы <b>"+t+"</b>.");
+                  document.write("<br>Последние изменения в документ внесены <b>"+lm+"</b>.");
+                }
+
+              </script><button onClick="getValues()">getValues</button>
+            </body>
+            </html>
