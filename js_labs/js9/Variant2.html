@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+       <title>Пример скрипта</title>
+<!-- <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js'></script> -->
+<!-- <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script> -->
+<script src='http://code.jquery.com/jquery-latest.js'></script>
+<script>
+	$(document).ready(function(){
+		$('#but1').click(function(){
+			$('tr:odd').hide();
+		})
+
+		$('#but2').click(function(){
+			$('tr:odd').show();
+		})
+	})
+</script>
+</head>
+<body>
+<table>
+	<tr><td>1строка</td><td>1строка</td></tr>
+	<tr><td>2строка</td><td>1строка</td></tr>
+	<tr><td>3строка</td><td>1строка</td></tr>
+	<tr><td>4строка</td><td>1строка</td></tr>
+	<tr><td>5строка</td><td>1строка</td></tr>
+	<tr><td>6строка</td><td>1строка</td></tr>
+</table>
+<button id='but1'>Спрятать четные строки</button>
+<button id='but2'>Показать четные строки</button>
+
+</body>
+</html>
